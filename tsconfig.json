@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "lib": [
+            "es2017",
+            "dom",
+            "esnext.asynciterable"
+        ],
+        "baseUrl": "./",
+        "declaration": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noErrorTruncation": true,
+        "outDir": "./dist",
+        "pretty": true,
+        "removeComments": true,
+        "rootDir": "./src",
+        "sourceMap": true,
+        "strict": true,
+        "target": "es2017"
+    },
+    "exclude": [
+        "./node_modules",
+        "./dist",
+        "./src/tests"
+    ]
+}
