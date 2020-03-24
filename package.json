@@ -6,6 +6,9 @@
 	"scripts": {
 		"start": "node dist/main/server.js",
 		"compile": "tsc",
+		"prettier": "prettier --write ./src",
+		"lint": "prettier -c ./src && eslint ./src/**/*.ts",
+		"lint:fix": "npm run lint -- --fix",
 		"test": "mocha -r ts-node/register src/**/*.test.ts --exit"
 	},
 	"author": "",
@@ -15,10 +18,16 @@
 		"@types/mocha": "^7.0.2",
 		"@types/node": "^13.9.3",
 		"@types/sinon": "^7.5.2",
+		"@typescript-eslint/eslint-plugin": "^2.25.0",
+		"@typescript-eslint/parser": "^2.25.0",
 		"chai": "^4.2.0",
 		"chai-http": "^4.3.0",
+		"eslint": "^6.8.0",
+		"eslint-config-prettier": "^6.10.1",
+		"eslint-plugin-prettier": "^3.1.2",
 		"mocha": "^7.1.1",
 		"nodemon": "^2.0.2",
+		"prettier": "^2.0.2",
 		"sinon": "^9.0.1",
 		"ts-node": "^8.8.1",
 		"typescript": "^3.8.3"
